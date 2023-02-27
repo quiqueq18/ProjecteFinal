@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/iniciFragment">
+    <fragment
+        android:id="@+id/iniciFragment"
+        android:name="com.example.projectefinal.IniciFragment"
+        android:label="fragment_inici"
+        tools:layout="@layout/fragment_inici" >
+        <action
+            android:id="@+id/action_iniciFragment_to_listaPartidosFragment"
+            app:destination="@id/listaPartidosFragment" />
+        <action
+            android:id="@+id/action_iniciFragment_to_nav_mapas"
+            app:destination="@id/nav_mapas" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaPartidosFragment"
+        android:name="com.example.projectefinal.listaPartidosFragment"
+        android:label="fragment_lista_partidos"
+        tools:layout="@layout/fragment_lista_partidos" >
+        <action
+            android:id="@+id/action_listaPartidosFragment_to_mobile_navigation"
+            app:destination="@id/mobile_navigation" />
+    </fragment>
+    <include app:graph="@navigation/navigation" />
+    <include app:graph="@navigation/mapas" />
+</navigation>

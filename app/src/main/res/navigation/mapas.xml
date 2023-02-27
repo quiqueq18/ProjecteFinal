@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_mapas"
+    app:startDestination="@+id/nav_des_camp">
+
+    <fragment
+        android:id="@+id/nav_mapa"
+        android:name="com.example.projectefinal.MapaFragment"
+        tools:layout="@layout/fragment_mapa" />
+
+    <fragment
+        android:id="@+id/nav_des_camp"
+        android:name="com.example.projectefinal.DescripcioCampFragment"
+        tools:layout="@layout/fragment_descripcio_camp" />
+
+</navigation>

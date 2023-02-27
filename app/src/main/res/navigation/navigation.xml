@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_est_eq">
+
+    <fragment
+        android:id="@+id/nav_est_eq"
+        android:name="com.example.projectefinal.EstadisticasEquipoFragment"
+        tools:layout="@layout/fragment_estadisticas_equipo" />
+
+    <fragment
+        android:id="@+id/nav_est_jug"
+        android:name="com.example.projectefinal.EstadisticasJugadoresFragment"
+        tools:layout="@layout/fragment_estadisticas_jugadores" />
+
+    <fragment
+        android:id="@+id/nav_graf"
+        android:name="com.example.projectefinal.GraficosFragment"
+        tools:layout="@layout/fragment_graficos" />
+</navigation>
